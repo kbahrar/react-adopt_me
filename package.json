@@ -1,0 +1,28 @@
+{
+    "name": "adpt-me",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "format": "prettier --write \"src/**/*.{js,jsx}\"",
+        "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+        "dev": "parcel src/index.html"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "prettier": "^2.6.0",
+        "react-dom": "^17.0.2",
+        "react-router-dom": "^6.2.2"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.17.8",
+        "eslint": "^8.11.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "parcel": "^1.12.3"
+    },
+    "browserslist": [
+        "last 2 Chrome versions"
+    ]
+}
