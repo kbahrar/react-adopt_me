@@ -17,10 +17,15 @@
     },
     "devDependencies": {
         "@babel/core": "^7.17.8",
+        "@tailwindcss/forms": "^0.2.1",
+        "@tailwindcss/postcss7-compat": "^2.0.3",
+        "autoprefixer": "^9.8.6",
         "eslint": "^8.11.0",
         "eslint-config-prettier": "^8.5.0",
         "eslint-plugin-react-hooks": "^4.3.0",
-        "parcel": "^1.12.3"
+        "parcel": "^1.12.3",
+        "postcss": "^7.0.35",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3"
     },
     "browserslist": [
         "last 2 Chrome versions"

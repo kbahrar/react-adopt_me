@@ -2,7 +2,7 @@ import Pet from "./Pet";
 
 export default function Results({ Pets }) {
   return (
-    <div className="search">
+    <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-5">
       {!Pets.length ? (
         <h1>No Pets found</h1>
       ) : (

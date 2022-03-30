@@ -48,13 +48,14 @@ class Details extends React.Component {
       return <h1>Loading ...</h1>;
     } else {
       return (
-        <div className="details">
-          <div>
-            <h1>{name} </h1>
-            <h2>{`${animal} - ${breed} - ${city}, ${state}`}</h2>
+        <div className="pb-5">
+          <div className=" text-blue-50 w-3/5 mx-auto text-center bg-gray-400 flex flex-col rounded-md">
+            <h1 className="p-5 text-5xl font-bold font-serif">{name} </h1>
+            <h2 className="p-2 text-lg font-bold">{`${animal} - ${breed} - ${city}, ${state}`}</h2>
             <ThemeContext.Consumer>
               {([theme]) => (
                 <button
+                  className="mx-auto w-1/6 p-2 rounded-xl mb-3 hover:bg-black"
                   onClick={this.toggleModal}
                   style={{ backgroundColor: theme }}
                 >
@@ -62,7 +63,7 @@ class Details extends React.Component {
                 </button>
               )}
             </ThemeContext.Consumer>
-            <p>{description}</p>
+            <p className="w-2/6 mx-auto my-3">{description}</p>
             {showModal ? (
               <Modal>
                 <div>

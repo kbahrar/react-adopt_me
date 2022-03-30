@@ -19,13 +19,21 @@ export default class Carousel extends React.Component {
     const { images } = this.props;
 
     return (
-      <div className="carousel">
-        <img src={images[active]} alt="animal" />
-        <div className="carousel-smaller">
+      <div className="flex bg-gray-300 p-7 h-96">
+        <img
+          className=" max-w-xs border-yellow-400 border-2 rounded-2xl"
+          src={images[active]}
+          alt="animal"
+        />
+        <div className="flex p-5 justify-between flex-wrap">
           {images.map((img, index) => (
             <img
               key={img}
-              className={index === active ? "active" : ""}
+              className={
+                index === active
+                  ? "h-28 w-28 rounded-full border-yellow-400 border-2"
+                  : "h-28 w-28 rounded-full cursor-pointer"
+              }
               src={img}
               alt="animal-thumb"
               onClick={() => this.handleChangeImg(index)}
